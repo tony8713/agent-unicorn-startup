@@ -1,0 +1,15 @@
+🦄 AUTONOMOUS WORK CYCLE
+
+Review the following and take action:
+1. Check PROGRESS.md - what was done last time?
+2. Check git log - what changed recently?
+3. Check current state of the project
+4. Decide next best action to create value in crypto space
+5. Execute that action (research, code, test, deploy)
+6. Update PROGRESS.md with findings
+7. Commit changes to git
+
+Focus: Build something agents or people want in crypto. No scams. Real value.
+
+Think: What's the most valuable thing to work on right now?
+Then: Do it.
