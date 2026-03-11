@@ -1,2 +1,494 @@
 [2026-03-11T02:14:36.947Z] Linear webhook server running on port 3000
 [2026-03-11T02:14:36.950Z] Webhook URL: http://localhost:3000/webhook/linear
+[2026-03-11T02:19:54.154Z] Received webhook: {
+  "type": "test",
+  "action": "test"
+}
+[2026-03-11T02:19:54.159Z] Processing: type=test, action=test
+[2026-03-11T02:22:10.708Z] Received webhook: {
+  "action": "create",
+  "actor": {
+    "id": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+    "name": "tony@bonustrack.co",
+    "email": "tony@bonustrack.co",
+    "url": "https://linear.app/bonustrack/profiles/tony",
+    "type": "user"
+  },
+  "createdAt": "2026-03-11T02:22:09.969Z",
+  "data": {
+    "id": "94336609-adae-4a1e-82f1-bb072f0f746a",
+    "createdAt": "2026-03-11T02:22:09.988Z",
+    "updatedAt": "2026-03-11T02:22:09.969Z",
+    "body": "Testing webhook integration - can I receive this?",
+    "issueId": "ba2e4a8c-0968-4233-9c4a-a9f3f8015972",
+    "userId": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+    "reactionData": [],
+    "isArtificialAgentSessionRoot": false,
+    "botActor": null,
+    "user": {
+      "id": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+      "name": "tony@bonustrack.co",
+      "email": "tony@bonustrack.co",
+      "url": "https://linear.app/bonustrack/profiles/tony"
+    },
+    "issue": {
+      "id": "ba2e4a8c-0968-4233-9c4a-a9f3f8015972",
+      "title": "Set up authentication system",
+      "teamId": "1b78061b-ffa3-4c77-8cdb-ca43c97c8df8",
+      "team": {
+        "id": "1b78061b-ffa3-4c77-8cdb-ca43c97c8df8",
+        "key": "BON",
+        "name": "Bonustrack"
+      },
+      "identifier": "BON-33",
+      "url": "https://linear.app/bonustrack/issue/BON-33/set-up-authentication-system"
+    }
+  },
+  "url": "https://linear.app/bonustrack/issue/BON-33/set-up-authentication-system#comment-94336609",
+  "type": "Comment",
+  "organizationId": "95afbf4d-ce19-4de9-9e89-80637ae3d29f",
+  "webhookTimestamp": 1773195730431,
+  "webhookId": "7684031d-e93d-48b0-82b1-0f7a8370bfc6"
+}
+[2026-03-11T02:22:10.716Z] Processing: type=Comment, action=create
+[2026-03-11T02:22:10.717Z] New comment on issue ba2e4a8c-0968-4233-9c4a-a9f3f8015972: Testing webhook integration - can I receive this?
+[2026-03-11T02:22:46.188Z] Received webhook: {
+  "action": "update",
+  "actor": {
+    "id": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+    "name": "tony@bonustrack.co",
+    "email": "tony@bonustrack.co",
+    "url": "https://linear.app/bonustrack/profiles/tony",
+    "type": "user"
+  },
+  "createdAt": "2026-03-11T02:22:45.524Z",
+  "data": {
+    "id": "ba2e4a8c-0968-4233-9c4a-a9f3f8015972",
+    "createdAt": "2026-03-11T02:17:28.707Z",
+    "updatedAt": "2026-03-11T02:22:45.565Z",
+    "number": 33,
+    "title": "Set up authentication system",
+    "priority": 1,
+    "sortOrder": 75,
+    "prioritySortOrder": -28154,
+    "startedAt": "2026-03-11T02:22:45.544Z",
+    "slaType": "all",
+    "addedToTeamAt": "2026-03-11T02:17:28.725Z",
+    "labelIds": [],
+    "teamId": "1b78061b-ffa3-4c77-8cdb-ca43c97c8df8",
+    "previousIdentifiers": [],
+    "creatorId": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+    "assigneeId": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+    "stateId": "ebf2d2a6-6b4a-47e0-8aec-216812c316e4",
+    "reactionData": [],
+    "priorityLabel": "Urgent",
+    "botActor": null,
+    "identifier": "BON-33",
+    "url": "https://linear.app/bonustrack/issue/BON-33/set-up-authentication-system",
+    "subscriberIds": [
+      "c049a8c7-e846-4268-a2ab-d4feafe16349"
+    ],
+    "assignee": {
+      "id": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+      "name": "tony@bonustrack.co",
+      "email": "tony@bonustrack.co",
+      "url": "https://linear.app/bonustrack/profiles/tony"
+    },
+    "state": {
+      "id": "ebf2d2a6-6b4a-47e0-8aec-216812c316e4",
+      "color": "#f2c94c",
+      "name": "In Progress",
+      "type": "started"
+    },
+    "team": {
+      "id": "1b78061b-ffa3-4c77-8cdb-ca43c97c8df8",
+      "key": "BON",
+      "name": "Bonustrack"
+    },
+    "labels": [],
+    "description": "Implement user authentication for both humans and AI agents.\n\n**Requirements:**\n\n* Email/password auth\n* OAuth (Google, GitHub)\n* API key auth for agents\n* Role management (human/agent)\n\n**GitHub:** agent-unicorn-startup#2",
+    "descriptionData": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Implement user authentication for both humans and AI agents.\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Requirements:\",\"marks\":[{\"type\":\"strong\",\"attrs\":{}}]}]},{\"type\":\"bullet_list\",\"content\":[{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Email/password auth\"}]}]},{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"OAuth (Google, GitHub)\"}]}]},{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"API key auth for agents\"}]}]},{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Role management (human/agent)\"}]}]}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"GitHub:\",\"marks\":[{\"type\":\"strong\",\"attrs\":{}}]},{\"type\":\"text\",\"text\":\" agent-unicorn-startup#2\"}]}]}"
+  },
+  "updatedFrom": {
+    "stateId": "3ae7fe5c-16e1-432b-87a5-ce87f015f6d5",
+    "sortOrder": -28199,
+    "startedAt": null,
+    "updatedAt": "2026-03-11T02:22:09.969Z",
+    "assigneeId": null
+  },
+  "url": "https://linear.app/bonustrack/issue/BON-33/set-up-authentication-system",
+  "type": "Issue",
+  "organizationId": "95afbf4d-ce19-4de9-9e89-80637ae3d29f",
+  "webhookTimestamp": 1773195766016,
+  "webhookId": "7684031d-e93d-48b0-82b1-0f7a8370bfc6"
+}
+[2026-03-11T02:22:46.194Z] Processing: type=Issue, action=update
+[2026-03-11T02:22:46.196Z] Issue BON-33 assigned to me: Set up authentication system
+[2026-03-11T02:22:46.279Z] Error acknowledging assignment: Command failed: linear comment ba2e4a8c-0968-4233-9c4a-a9f3f8015972 -m "Thanks for assigning this to me! I'll get started on it. 🚀"
+Unknown command: comment
+
+[2026-03-11T02:22:57.475Z] Received webhook: {
+  "action": "update",
+  "actor": {
+    "id": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+    "name": "tony@bonustrack.co",
+    "email": "tony@bonustrack.co",
+    "url": "https://linear.app/bonustrack/profiles/tony",
+    "type": "user"
+  },
+  "createdAt": "2026-03-11T02:22:56.672Z",
+  "data": {
+    "id": "ba2e4a8c-0968-4233-9c4a-a9f3f8015972",
+    "createdAt": "2026-03-11T02:17:28.707Z",
+    "updatedAt": "2026-03-11T02:22:45.565Z",
+    "number": 33,
+    "title": "Set up authentication system",
+    "priority": 1,
+    "sortOrder": -856,
+    "prioritySortOrder": -28154,
+    "startedAt": "2026-03-11T02:22:45.544Z",
+    "slaType": "all",
+    "addedToTeamAt": "2026-03-11T02:17:28.725Z",
+    "labelIds": [],
+    "teamId": "1b78061b-ffa3-4c77-8cdb-ca43c97c8df8",
+    "previousIdentifiers": [],
+    "creatorId": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+    "assigneeId": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+    "stateId": "ebf2d2a6-6b4a-47e0-8aec-216812c316e4",
+    "reactionData": [],
+    "priorityLabel": "Urgent",
+    "botActor": null,
+    "identifier": "BON-33",
+    "url": "https://linear.app/bonustrack/issue/BON-33/set-up-authentication-system",
+    "subscriberIds": [
+      "c049a8c7-e846-4268-a2ab-d4feafe16349"
+    ],
+    "assignee": {
+      "id": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+      "name": "tony@bonustrack.co",
+      "email": "tony@bonustrack.co",
+      "url": "https://linear.app/bonustrack/profiles/tony"
+    },
+    "state": {
+      "id": "ebf2d2a6-6b4a-47e0-8aec-216812c316e4",
+      "color": "#f2c94c",
+      "name": "In Progress",
+      "type": "started"
+    },
+    "team": {
+      "id": "1b78061b-ffa3-4c77-8cdb-ca43c97c8df8",
+      "key": "BON",
+      "name": "Bonustrack"
+    },
+    "labels": [],
+    "description": "Implement user authentication for both humans and AI agents.\n\n**Requirements:**\n\n* Email/password auth\n* OAuth (Google, GitHub)\n* API key auth for agents\n* Role management (human/agent)\n\n**GitHub:** agent-unicorn-startup#2",
+    "descriptionData": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Implement user authentication for both humans and AI agents.\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Requirements:\",\"marks\":[{\"type\":\"strong\",\"attrs\":{}}]}]},{\"type\":\"bullet_list\",\"content\":[{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Email/password auth\"}]}]},{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"OAuth (Google, GitHub)\"}]}]},{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"API key auth for agents\"}]}]},{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Role management (human/agent)\"}]}]}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"GitHub:\",\"marks\":[{\"type\":\"strong\",\"attrs\":{}}]},{\"type\":\"text\",\"text\":\" agent-unicorn-startup#2\"}]}]}"
+  },
+  "updatedFrom": {
+    "sortOrder": 75
+  },
+  "url": "https://linear.app/bonustrack/issue/BON-33/set-up-authentication-system",
+  "type": "Issue",
+  "organizationId": "95afbf4d-ce19-4de9-9e89-80637ae3d29f",
+  "webhookTimestamp": 1773195777305,
+  "webhookId": "7684031d-e93d-48b0-82b1-0f7a8370bfc6"
+}
+[2026-03-11T02:22:57.481Z] Processing: type=Issue, action=update
+[2026-03-11T02:22:57.482Z] Issue BON-33 assigned to me: Set up authentication system
+[2026-03-11T02:22:57.555Z] Error acknowledging assignment: Command failed: linear comment ba2e4a8c-0968-4233-9c4a-a9f3f8015972 -m "Thanks for assigning this to me! I'll get started on it. 🚀"
+Unknown command: comment
+
+[2026-03-11T02:22:58.124Z] Received webhook: {
+  "action": "create",
+  "actor": {
+    "id": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+    "name": "tony@bonustrack.co",
+    "email": "tony@bonustrack.co",
+    "url": "https://linear.app/bonustrack/profiles/tony",
+    "type": "user"
+  },
+  "createdAt": "2026-03-11T02:22:57.276Z",
+  "data": {
+    "id": "6bbb5fae-3c25-46a2-b874-c25de5f2cac8",
+    "createdAt": "2026-03-11T02:22:57.287Z",
+    "updatedAt": "2026-03-11T02:22:57.276Z",
+    "body": "🚀 Starting work on authentication system.\n\n**Plan:**\n1. Set up Express server with TypeScript\n2. Implement GitHub OAuth\n3. JWT token generation\n4. Protected route middleware\n5. User session management\n\nWill post updates hourly on progress.",
+    "issueId": "ba2e4a8c-0968-4233-9c4a-a9f3f8015972",
+    "userId": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+    "reactionData": [],
+    "isArtificialAgentSessionRoot": false,
+    "botActor": null,
+    "user": {
+      "id": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+      "name": "tony@bonustrack.co",
+      "email": "tony@bonustrack.co",
+      "url": "https://linear.app/bonustrack/profiles/tony"
+    },
+    "issue": {
+      "id": "ba2e4a8c-0968-4233-9c4a-a9f3f8015972",
+      "title": "Set up authentication system",
+      "teamId": "1b78061b-ffa3-4c77-8cdb-ca43c97c8df8",
+      "team": {
+        "id": "1b78061b-ffa3-4c77-8cdb-ca43c97c8df8",
+        "key": "BON",
+        "name": "Bonustrack"
+      },
+      "identifier": "BON-33",
+      "url": "https://linear.app/bonustrack/issue/BON-33/set-up-authentication-system"
+    }
+  },
+  "url": "https://linear.app/bonustrack/issue/BON-33/set-up-authentication-system#comment-6bbb5fae",
+  "type": "Comment",
+  "organizationId": "95afbf4d-ce19-4de9-9e89-80637ae3d29f",
+  "webhookTimestamp": 1773195778038,
+  "webhookId": "7684031d-e93d-48b0-82b1-0f7a8370bfc6"
+}
+[2026-03-11T02:22:58.129Z] Processing: type=Comment, action=create
+[2026-03-11T02:22:58.130Z] New comment on issue ba2e4a8c-0968-4233-9c4a-a9f3f8015972: 🚀 Starting work on authentication system.
+
+**Plan:**
+1. Set up Express server with TypeScript
+2. Implement GitHub OAuth
+3. JWT token generation
+4. Protected route middleware
+5. User session management
+
+Will post updates hourly on progress.
+[2026-03-11T02:23:05.392Z] Received webhook: {
+  "action": "create",
+  "actor": {
+    "id": "e8eb60c3-2bdb-4314-99ea-f0857c61c60f",
+    "name": "Fabien M",
+    "email": "fabien@bonustrack.co",
+    "url": "https://linear.app/bonustrack/profiles/fabien",
+    "type": "user"
+  },
+  "createdAt": "2026-03-11T02:23:03.002Z",
+  "data": {
+    "id": "ba8daaee-439a-4ce6-b5b2-7ffc4d695bb8",
+    "createdAt": "2026-03-11T02:23:03.024Z",
+    "updatedAt": "2026-03-11T02:23:03.002Z",
+    "body": "@tony u see my msg?",
+    "issueId": "1c05126c-38cb-4d49-8205-20d52fde4b35",
+    "userId": "e8eb60c3-2bdb-4314-99ea-f0857c61c60f",
+    "reactionData": [],
+    "isArtificialAgentSessionRoot": false,
+    "botActor": null,
+    "user": {
+      "id": "e8eb60c3-2bdb-4314-99ea-f0857c61c60f",
+      "name": "Fabien M",
+      "email": "fabien@bonustrack.co",
+      "url": "https://linear.app/bonustrack/profiles/fabien"
+    },
+    "issue": {
+      "id": "1c05126c-38cb-4d49-8205-20d52fde4b35",
+      "title": "Design agent reputation system",
+      "teamId": "1b78061b-ffa3-4c77-8cdb-ca43c97c8df8",
+      "team": {
+        "id": "1b78061b-ffa3-4c77-8cdb-ca43c97c8df8",
+        "key": "BON",
+        "name": "Bonustrack"
+      },
+      "identifier": "BON-39",
+      "url": "https://linear.app/bonustrack/issue/BON-39/design-agent-reputation-system"
+    }
+  },
+  "url": "https://linear.app/bonustrack/issue/BON-39/design-agent-reputation-system#comment-ba8daaee",
+  "type": "Comment",
+  "organizationId": "95afbf4d-ce19-4de9-9e89-80637ae3d29f",
+  "webhookTimestamp": 1773195783395,
+  "webhookId": "7684031d-e93d-48b0-82b1-0f7a8370bfc6"
+}
+[2026-03-11T02:23:05.399Z] Processing: type=Comment, action=create
+[2026-03-11T02:23:05.400Z] New comment on issue 1c05126c-38cb-4d49-8205-20d52fde4b35: @tony u see my msg?
+[2026-03-11T02:23:05.400Z] Generating response for comment on issue 1c05126c-38cb-4d49-8205-20d52fde4b35
+[2026-03-11T02:23:05.451Z] Received webhook: {
+  "action": "update",
+  "actor": {
+    "id": "e8eb60c3-2bdb-4314-99ea-f0857c61c60f",
+    "name": "Fabien M",
+    "email": "fabien@bonustrack.co",
+    "url": "https://linear.app/bonustrack/profiles/fabien",
+    "type": "user"
+  },
+  "createdAt": "2026-03-11T02:23:03.324Z",
+  "data": {
+    "id": "1c05126c-38cb-4d49-8205-20d52fde4b35",
+    "createdAt": "2026-03-11T02:17:32.223Z",
+    "updatedAt": "2026-03-11T02:23:03.002Z",
+    "number": 39,
+    "title": "Design agent reputation system",
+    "priority": 2,
+    "sortOrder": -34105,
+    "prioritySortOrder": -34093,
+    "slaType": "all",
+    "addedToTeamAt": "2026-03-11T02:17:32.253Z",
+    "labelIds": [],
+    "teamId": "1b78061b-ffa3-4c77-8cdb-ca43c97c8df8",
+    "previousIdentifiers": [],
+    "creatorId": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+    "stateId": "3ae7fe5c-16e1-432b-87a5-ce87f015f6d5",
+    "reactionData": [],
+    "priorityLabel": "High",
+    "botActor": null,
+    "identifier": "BON-39",
+    "url": "https://linear.app/bonustrack/issue/BON-39/design-agent-reputation-system",
+    "subscriberIds": [
+      "c049a8c7-e846-4268-a2ab-d4feafe16349",
+      "e8eb60c3-2bdb-4314-99ea-f0857c61c60f"
+    ],
+    "state": {
+      "id": "3ae7fe5c-16e1-432b-87a5-ce87f015f6d5",
+      "color": "#bec2c8",
+      "name": "Backlog",
+      "type": "backlog"
+    },
+    "team": {
+      "id": "1b78061b-ffa3-4c77-8cdb-ca43c97c8df8",
+      "key": "BON",
+      "name": "Bonustrack"
+    },
+    "labels": [],
+    "description": "Build trust through agent reputation and ratings.\n\n**Features:**\n\n* Project completion rate\n* Backer ratings/reviews\n* Success metrics & quality scores\n* Badges/achievements\n* Historical performance\n\n**GitHub:** agent-unicorn-startup#8",
+    "descriptionData": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Build trust through agent reputation and ratings.\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Features:\",\"marks\":[{\"type\":\"strong\",\"attrs\":{}}]}]},{\"type\":\"bullet_list\",\"content\":[{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Project completion rate\"}]}]},{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Backer ratings/reviews\"}]}]},{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Success metrics & quality scores\"}]}]},{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Badges/achievements\"}]}]},{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Historical performance\"}]}]}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"GitHub:\",\"marks\":[{\"type\":\"strong\",\"attrs\":{}}]},{\"type\":\"text\",\"text\":\" agent-unicorn-startup#8\"}]}]}"
+  },
+  "updatedFrom": {
+    "subscriberIds": [
+      "c049a8c7-e846-4268-a2ab-d4feafe16349"
+    ]
+  },
+  "url": "https://linear.app/bonustrack/issue/BON-39/design-agent-reputation-system",
+  "type": "Issue",
+  "organizationId": "95afbf4d-ce19-4de9-9e89-80637ae3d29f",
+  "webhookTimestamp": 1773195783673,
+  "webhookId": "7684031d-e93d-48b0-82b1-0f7a8370bfc6"
+}
+[2026-03-11T02:23:05.457Z] Processing: type=Issue, action=update
+[2026-03-11T02:23:05.486Z] Error adding comment: Command failed: linear comment 1c05126c-38cb-4d49-8205-20d52fde4b35 -m "Got your message! I'll look into this. 👍"
+Unknown command: comment
+
+[2026-03-11T02:24:04.751Z] Received webhook: {
+  "action": "create",
+  "actor": {
+    "id": "e8eb60c3-2bdb-4314-99ea-f0857c61c60f",
+    "name": "Fabien M",
+    "email": "fabien@bonustrack.co",
+    "url": "https://linear.app/bonustrack/profiles/fabien",
+    "type": "user"
+  },
+  "createdAt": "2026-03-11T02:24:03.945Z",
+  "data": {
+    "id": "d829bdcb-17c5-4d9d-8581-4291efb7de4d",
+    "createdAt": "2026-03-11T02:24:03.967Z",
+    "updatedAt": "2026-03-11T02:24:03.945Z",
+    "body": "@tony how are u?",
+    "issueId": "ba2e4a8c-0968-4233-9c4a-a9f3f8015972",
+    "userId": "e8eb60c3-2bdb-4314-99ea-f0857c61c60f",
+    "reactionData": [],
+    "isArtificialAgentSessionRoot": false,
+    "botActor": null,
+    "user": {
+      "id": "e8eb60c3-2bdb-4314-99ea-f0857c61c60f",
+      "name": "Fabien M",
+      "email": "fabien@bonustrack.co",
+      "url": "https://linear.app/bonustrack/profiles/fabien"
+    },
+    "issue": {
+      "id": "ba2e4a8c-0968-4233-9c4a-a9f3f8015972",
+      "title": "Set up authentication system",
+      "teamId": "1b78061b-ffa3-4c77-8cdb-ca43c97c8df8",
+      "team": {
+        "id": "1b78061b-ffa3-4c77-8cdb-ca43c97c8df8",
+        "key": "BON",
+        "name": "Bonustrack"
+      },
+      "identifier": "BON-33",
+      "url": "https://linear.app/bonustrack/issue/BON-33/set-up-authentication-system"
+    }
+  },
+  "url": "https://linear.app/bonustrack/issue/BON-33/set-up-authentication-system#comment-d829bdcb",
+  "type": "Comment",
+  "organizationId": "95afbf4d-ce19-4de9-9e89-80637ae3d29f",
+  "webhookTimestamp": 1773195844595,
+  "webhookId": "7684031d-e93d-48b0-82b1-0f7a8370bfc6"
+}
+[2026-03-11T02:24:04.755Z] Processing: type=Comment, action=create
+[2026-03-11T02:24:04.757Z] New comment on issue ba2e4a8c-0968-4233-9c4a-a9f3f8015972: @tony how are u?
+[2026-03-11T02:24:04.757Z] Generating response for comment on issue ba2e4a8c-0968-4233-9c4a-a9f3f8015972
+[2026-03-11T02:24:04.840Z] Error adding comment: Command failed: linear comment ba2e4a8c-0968-4233-9c4a-a9f3f8015972 -m "Got your message! I'll look into this. 👍"
+Unknown command: comment
+
+[2026-03-11T02:24:04.845Z] Received webhook: {
+  "action": "update",
+  "actor": {
+    "id": "e8eb60c3-2bdb-4314-99ea-f0857c61c60f",
+    "name": "Fabien M",
+    "email": "fabien@bonustrack.co",
+    "url": "https://linear.app/bonustrack/profiles/fabien",
+    "type": "user"
+  },
+  "createdAt": "2026-03-11T02:24:04.327Z",
+  "data": {
+    "id": "ba2e4a8c-0968-4233-9c4a-a9f3f8015972",
+    "createdAt": "2026-03-11T02:17:28.707Z",
+    "updatedAt": "2026-03-11T02:24:03.945Z",
+    "number": 33,
+    "title": "Set up authentication system",
+    "priority": 1,
+    "sortOrder": -856,
+    "prioritySortOrder": -28154,
+    "startedAt": "2026-03-11T02:22:45.544Z",
+    "slaType": "all",
+    "addedToTeamAt": "2026-03-11T02:17:28.725Z",
+    "labelIds": [],
+    "teamId": "1b78061b-ffa3-4c77-8cdb-ca43c97c8df8",
+    "previousIdentifiers": [],
+    "creatorId": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+    "assigneeId": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+    "stateId": "ebf2d2a6-6b4a-47e0-8aec-216812c316e4",
+    "reactionData": [],
+    "priorityLabel": "Urgent",
+    "botActor": null,
+    "identifier": "BON-33",
+    "url": "https://linear.app/bonustrack/issue/BON-33/set-up-authentication-system",
+    "subscriberIds": [
+      "c049a8c7-e846-4268-a2ab-d4feafe16349",
+      "e8eb60c3-2bdb-4314-99ea-f0857c61c60f"
+    ],
+    "assignee": {
+      "id": "c049a8c7-e846-4268-a2ab-d4feafe16349",
+      "name": "tony@bonustrack.co",
+      "email": "tony@bonustrack.co",
+      "url": "https://linear.app/bonustrack/profiles/tony"
+    },
+    "state": {
+      "id": "ebf2d2a6-6b4a-47e0-8aec-216812c316e4",
+      "color": "#f2c94c",
+      "name": "In Progress",
+      "type": "started"
+    },
+    "team": {
+      "id": "1b78061b-ffa3-4c77-8cdb-ca43c97c8df8",
+      "key": "BON",
+      "name": "Bonustrack"
+    },
+    "labels": [],
+    "description": "Implement user authentication for both humans and AI agents.\n\n**Requirements:**\n\n* Email/password auth\n* OAuth (Google, GitHub)\n* API key auth for agents\n* Role management (human/agent)\n\n**GitHub:** agent-unicorn-startup#2",
+    "descriptionData": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Implement user authentication for both humans and AI agents.\"}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Requirements:\",\"marks\":[{\"type\":\"strong\",\"attrs\":{}}]}]},{\"type\":\"bullet_list\",\"content\":[{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Email/password auth\"}]}]},{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"OAuth (Google, GitHub)\"}]}]},{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"API key auth for agents\"}]}]},{\"type\":\"list_item\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Role management (human/agent)\"}]}]}]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"GitHub:\",\"marks\":[{\"type\":\"strong\",\"attrs\":{}}]},{\"type\":\"text\",\"text\":\" agent-unicorn-startup#2\"}]}]}"
+  },
+  "updatedFrom": {
+    "subscriberIds": [
+      "c049a8c7-e846-4268-a2ab-d4feafe16349"
+    ]
+  },
+  "url": "https://linear.app/bonustrack/issue/BON-33/set-up-authentication-system",
+  "type": "Issue",
+  "organizationId": "95afbf4d-ce19-4de9-9e89-80637ae3d29f",
+  "webhookTimestamp": 1773195844670,
+  "webhookId": "7684031d-e93d-48b0-82b1-0f7a8370bfc6"
+}
+[2026-03-11T02:24:04.853Z] Processing: type=Issue, action=update
+[2026-03-11T02:24:04.853Z] Issue BON-33 assigned to me: Set up authentication system
+[2026-03-11T02:24:04.931Z] Error acknowledging assignment: Command failed: linear comment ba2e4a8c-0968-4233-9c4a-a9f3f8015972 -m "Thanks for assigning this to me! I'll get started on it. 🚀"
+Unknown command: comment
+
